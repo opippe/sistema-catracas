@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/535f433bb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="left">
+            <div class="mapa">
+                <img src="./imagens/mapa.png" alt="">
+
+                <div class="botoes principal">
+                    <h3>Acesso Principal</h3>
+                    <button class="botao entrar" onclick="Acesso('Acesso Principal', 'Entrou')">
+                        <p>ENTRAR</p>
+                        <i class="fa-solid fa-circle-up"></i>
+                    </button>
+                    <button class="botao sair" onclick="Acesso('Acesso Principal', 'Saiu')">
+                        <p>SAIR</p>
+                        <i class="fa-solid fa-circle-down"></i>
+                    </button>
+                </div>
+
+                <div class="botoes fundos">
+                    <h3>Acesso Traseiro</h3>
+                    <button class="botao sair" onclick="Acesso('Acesso Traseiro', 'Saiu')">
+                        <p>SAIR</p>
+                        <i class="fa-solid fa-circle-up"></i>
+                    </button>
+                    <button class="botao entrar" onclick="Acesso('Acesso Traseiro', 'Entrou')">
+                        <p>ENTRAR</p>
+                        <i class="fa-solid fa-circle-down"></i>
+                    </button>
+                </div>
+
+                <div class="botoes predio">
+                    <h3>Prédio das Clínicas</h3>
+                    <button class="botao entrar" onclick="Acesso('Prédio das Clínicas', 'Entrou')">
+                        <p>ENTRAR</p>
+                        <i class="fa-solid fa-circle-up"></i>
+                    </button>
+                    <button class="botao sair" onclick="Acesso('Prédio das Clínicas', 'Saiu')">
+                        <p>SAIR</p>
+                        <i class="fa-solid fa-circle-down"></i>
+                    </button>
+                </div>
+
+                <div class="botoes ginasio">
+                    <h3>Ginásio</h3>
+                    <button class="botao entrar" onclick="Acesso('Ginásio', 'Entrou')">
+                        <p>ENTRAR</p>
+                        <i class="fa-solid fa-circle-up"></i>
+                    </button>
+                    <button class="botao sair" onclick="Acesso('Ginásio', 'Saiu')">
+                        <p>SAIR</p>
+                        <i class="fa-solid fa-circle-down"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="contorno">
+                    <div class="clip">
+                        <div class="clipper"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-left">
+                            <div class="avatar">
+                                <img src="./imagens//avatar.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="card-right">
+                            <div class="logo">
+                                <img src="./imagens/undb_logo2.png" alt="">
+                            </div>
+                            <div class="linha-nome linha">
+                                <input class="nome" id="nome" value="EdgaRd"></input>
+                                <button class="check"><i class="fa-solid fa-check"></i></button>
+                            </div>
+
+                            <div class="linha-perfil linha">
+                                <select class="perfil" id="perfil">
+                                    <option value="Aluno">Aluno</option>
+                                    <option value="Extensão">Extensão</option>
+                                    <option value="Atleta">Atleta</option>
+                                    <option value="Professor" selected>Professor</option>
+                                    <option value="Visitante">Visitante</option>
+                                </select>
+                                <button class="check" onclick="Acesso()"><i class="fa-solid fa-check"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabela topo">
+        <div class="chave">ID</div>
+        <div class="name">NOME</div>
+        <div class="datahora">DATA E HORA</div>
+        <div class="lugar">LOCAL</div>
+        <div class="sentido">SENTIDO</div>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
